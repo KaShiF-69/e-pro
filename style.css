@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 /* this is a universal selector */
 * {
     margin: 0;
@@ -9,7 +10,7 @@
 /* this is a body selector */
 body {
     background-color: #f0f0f0;
-    
+
 }
 
 .home-1 {
@@ -79,7 +80,7 @@ body {
     color: white;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     background-color: black;
 }
 
@@ -106,7 +107,7 @@ body {
     color: white;
 }
 
-.carousel-inner{
+.carousel-inner {
     width: 600px;
     /* margin-left: 120px; */
     position: relative;
@@ -176,7 +177,7 @@ body {
 
 }
 
-.question i{
+.question i {
     padding-right: 10px;
     padding-top: 5px;
 }
@@ -260,7 +261,7 @@ body {
 
 .activities {
     list-style: none;
-    
+
 }
 
 .activities li {
@@ -404,7 +405,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-  
+
 }
 
 .membership-card-bg-3 {
@@ -465,7 +466,7 @@ body {
     font-size: 25px;
     color: white;
 
-    
+
 }
 
 .exercise-card {
@@ -476,12 +477,12 @@ body {
     padding-top: 20px;
     color: white;
     border-radius: 10px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
 
-    
+
 }
 
-.exercise-card:hover{
+.exercise-card:hover {
     transform: translateY(-5px);
     transition: 0.5s;
     border: 3px solid red;
@@ -501,7 +502,7 @@ body {
     text-shadow: 2px 2px black;
 } */
 
-.exercise-text{
+.exercise-text {
     margin-top: 20px;
     height: auto;
     border: 2px solid cyan;
@@ -509,297 +510,341 @@ body {
     padding: 20px;
 }
 
+/* cycling page - kashif */
 
-/* key farem for btn  */
-@keyframes shake {
-    0% {
-        transform: translateY(0);
-    }
 
-    40% {
-        transform: translateY(-8px);
-    }
 
-    80% {
-        transform: translateY(8px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
+.cycling-header {
+    background-image: url("/assest/image/Cycling-img-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    padding-top: 80px;
+    font-size: 25px;
+    color: white;
 }
 
-@keyframes change {
-    0% {
-        background-color: black;
-        color: red;
+.cycling-card {
+    border: 2px solid black;
+}
+
+.cycling-card:hover {
+    transform: translateY(-5px);
+    transition: 0.5s;
+    border: 2px solid red;
+}
+
+.perks-body{
+    background-image: url("/assest/image/cycling-perks-bg.jpg");
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+
+.perk-item {
+     margin-top: 15px;
+      margin-bottom: 0.75rem;
+      /* font-size: 1.05rem; */
+      font-size: 18px;
+      margin-left: 350px;
+      text-decoration: underline;
     }
 
-    100% {
+    /* key farem for btn  */
+    @keyframes shake {
+        0% {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-8px);
+        }
+
+        80% {
+            transform: translateY(8px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes change {
+        0% {
+            background-color: black;
+            color: red;
+        }
+
+        100% {
+            background-color: red;
+            color: black;
+        }
+    }
+
+    /* join us btn hover effect */
+    .join-btn:hover {
         background-color: red;
         color: black;
-    }
-}
-
-/* join us btn hover effect */
-.join-btn:hover {
-    background-color: red;
-    color: black;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-
-
-
-
-
-
-@media (max-width: 860px) {
-    .logo-menu {
-        flex-grow: 1;
-        text-align: left;
-    }
-
-    .hamburger-menu {
-        display: block; 
-        position: absolute; 
-        right: 1.5rem; 
-        top: 0.8rem;
-    }
-
-    .navbar {
-        width: 40%;
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        background-color: black; 
-        padding: 20px 0;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        text-decoration: underline;
     }
 
 
-    .navbar.active { /* Class added by JavaScript when hamburger is clicked */
-        display: flex; /* Show navigation links when active */
+
+
+
+
+
+    @media (max-width: 860px) {
+        .logo-menu {
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        .hamburger-menu {
+            display: block;
+            position: absolute;
+            right: 1.5rem;
+            top: 0.8rem;
+        }
+
+        .navbar {
+            width: 40%;
+            display: none;
+            flex-direction: column;
+            text-align: center;
+            background-color: black;
+            padding: 20px 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+
+        .navbar.active {
+            /* Class added by JavaScript when hamburger is clicked */
+            display: flex;
+            /* Show navigation links when active */
+        }
+
+        .navbar ul {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .navbar ul li {
+            margin: 10px 0;
+            padding: 5px 0;
+            width: 100%;
+            /* Ensure full width for clickable area */
+        }
+
+        .navbar-links ul li a {
+            font-size: 1.1rem;
+            display: block;
+            /* Make the whole area clickable */
+        }
+
+        .carousel-inner {
+            /* width: 400px; */
+            left: 60px;
+            flex-wrap: wrap;
+        }
+
+        .first-heading {
+            font-size: 6vw;
+        }
+
+        .first-para {
+            font-size: 1.5vw;
+        }
+
+        .join-btn {
+            padding: 15px 30px;
+            font-size: 14px;
+        }
+
+        /* Faq responsivness started  */
+        .faqs-heading {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 35px;
+        }
+
+        /* Site map is started  */
+        .site-heading {
+            font-size: 6vw;
+        }
+
+        .site-para {
+            font-size: 2vw;
+        }
     }
 
-    .navbar ul {
-        flex-direction: column; 
-        width: 100%;
+    @media (max-width: 670px) {
+        .carousel-inner {
+            width: 400px;
+            left: 40px;
+            flex-wrap: wrap;
+        }
+
+        .first-heading {
+            font-size: 8vw;
+        }
+
+        .first-para {
+            font-size: 2vw;
+        }
+
+        /* site map  */
+        .site-heading {
+            font-size: 6vw;
+            left: 50px;
+        }
+
+        .site-para {
+            font-size: 2vw;
+            left: 50px;
+        }
+
+        .section-heading {
+            font-size: 4vw;
+        }
+
+        .main-sectionlink li {
+            font-size: 2vw;
+        }
+
+        .activities li {
+            font-size: 2vw;
+        }
+
+        .information li {
+            font-size: 2vw;
+        }
+
+        .information {
+            top: -25px;
+        }
+
+        .details {
+            width: 500px;
+            font-size: 12px;
+
+        }
+
+        .personal-details {
+            flex-wrap: wrap;
+        }
+
+        .details img {
+            width: 20px;
+        }
+
+        .footer-para {
+            font-size: 4vw;
+        }
+
+        /* site map  */
+
+        .details {
+            display: block;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* faqs  */
+        .bar {
+            padding: 15px;
+        }
+
     }
 
-    .navbar ul li {
-        margin: 10px 0;
-        padding: 5px 0;
-        width: 100%; /* Ensure full width for clickable area */
+    @media (max-width: 470px) {
+        .logo {
+            width: 50px;
+        }
+
+        .hamburger-menu {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .carousel-inner {
+            width: 300px;
+            left: 20px;
+            flex-wrap: wrap;
+        }
+
+        .first-heading {
+            font-size: 8vw;
+        }
+
+        .first-para {
+            font-size: 2vw;
+        }
+
+        .navbar {
+            width: 100%;
+            display: none;
+            flex-direction: column;
+            text-align: center;
+            background-color: black;
+            padding: 20px 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        /* site map  */
+
+        .details {
+            display: block;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* faqs  */
+        .bar {
+            padding: 10px;
+        }
     }
 
-    .navbar-links ul li a {
-        font-size: 1.1rem;
-        display: block; /* Make the whole area clickable */
+    @media (max-width: 375px) {
+        .join-btn {
+            padding: 5px 10px;
+            font-size: 8px;
+        }
+
+        .carousel-inner {
+            width: 200px;
+            left: 10px;
+            flex-wrap: wrap;
+        }
+
+
+        .first-heading {
+            font-size: 8vw;
+        }
+
+        .first-para {
+            font-size: 4vw;
+        }
+
+        .details {
+            position: relative;
+            right: 120px;
+        }
+
+        /* faqs  */
+        .bar {
+            padding: 5px;
+        }
     }
 
-    .carousel-inner{
-        /* width: 400px; */
-        left: 60px;
-        flex-wrap: wrap;
+    /* Gallery Images */
+
+    @media (max-width: 768px) {
+        .gallery-img {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
     }
-
-    .first-heading{
-        font-size: 6vw;
-    }
-
-    .first-para{
-        font-size: 1.5vw;
-    }
-
-    .join-btn {
-        padding: 15px 30px;
-        font-size: 14px;
-    }
-
-    /* Faq responsivness started  */
-    .faqs-heading {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 35px;
-    }
-
-    /* Site map is started  */
-    .site-heading{
-        font-size: 6vw;
-    }
-
-    .site-para{
-        font-size: 2vw;
-    }
-}
-
-@media (max-width: 670px){
-    .carousel-inner{
-        width: 400px;
-        left: 40px;
-        flex-wrap: wrap;
-    }
-
-    .first-heading{
-        font-size: 8vw;
-    }
-
-    .first-para{
-        font-size: 2vw;
-    }
-
-    /* site map  */
-    .site-heading{
-        font-size: 6vw;
-        left: 50px;
-    }
-
-    .site-para{
-        font-size: 2vw;
-        left: 50px;
-    }
-
-    .section-heading{
-        font-size: 4vw;
-    }
-
-    .main-sectionlink li{
-        font-size: 2vw;
-    }
-
-    .activities li{
-        font-size: 2vw;
-    }
-
-    .information li{
-        font-size: 2vw;
-    }
-
-    .information{
-        top: -25px;
-    }
-
-    .details{
-        width: 500px;
-        font-size: 12px;
-        
-    }
-
-    .personal-details{
-        flex-wrap: wrap;
-    }
-
-    .details img{
-        width: 20px;
-    }
-
-    .footer-para{
-        font-size: 4vw;
-    }
-
-    /* site map  */
-
-    .details{
-        display: block;
-        align-items: center;
-        justify-content: center;
-    }
-
-    /* faqs  */
-    .bar{
-        padding: 15px;
-    }
-
-}
-
-@media (max-width: 470px) {
-    .logo{
-        width: 50px;
-    }
-
-    .hamburger-menu {
-        font-size: 1rem;
-        margin-top: 10px;
-    }
-
-    .carousel-inner{
-        width: 300px;
-        left: 20px;
-        flex-wrap: wrap;
-    }
-
-    .first-heading{
-        font-size: 8vw;
-    }
-
-    .first-para{
-        font-size: 2vw;
-    }
-
-    .navbar {
-        width: 100%;
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        background-color: black; 
-        padding: 20px 0;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-    }
-
-    /* site map  */
-
-    .details{
-        display: block;
-        align-items: center;
-        justify-content: center;
-    }
-
-    /* faqs  */
-    .bar{
-        padding: 10px;
-    }
-}
-
-@media (max-width: 375px) {
-    .join-btn {
-        padding: 5px 10px;
-        font-size: 8px;
-    }
-    .carousel-inner{
-        width: 200px;
-        left: 10px;
-        flex-wrap: wrap;
-    }
-
-
-    .first-heading{
-        font-size: 8vw;
-    }
-
-    .first-para{
-        font-size: 4vw;
-    }
-
-    .details{
-        position: relative;
-        right: 120px;
-    }
-
-    /* faqs  */
-    .bar{
-        padding: 5px;
-    }
-}
-
-/* Gallery Images */
-
-@media (max-width: 768px) {
-    .gallery-img {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-    
-}
-
