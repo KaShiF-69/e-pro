@@ -33,5 +33,12 @@ $(document).ready(function() {
   })
 });
 
+// ALYAN 
+
+function toggleMore() {
+  const content = document.getElementById('moreContent');
+  content.classList.toggle('hidden');
+}
+
 
 
