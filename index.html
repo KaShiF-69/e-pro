@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prime Fitness Club</title>
+    <!-- Title favicon -->
+     <link rel="icon" href="assest/image/2.ico">
     <!-- this meta tage is used for seo -->
     <meta name="description"
         content="Welcome to Prime Fitness Club, your ultimate destination for fitness and wellness. Join us to achieve your health goals with state-of-the-art facilities and expert guidance.">
@@ -15,7 +16,7 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
     <!-- this link is used to link the css file -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <!-- this link is used to link the font awesome icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +31,6 @@
     <link rel="stylesheet" href="/css-lightbox/lightbox.css">
     <script src="/js-lightbox/lightbox.js"></script>
 </head>
-
 <body>
     <!-- first i create navbar -->
     <!-- this is home page of prime fitness club -->
@@ -57,13 +57,14 @@
                             <li><a class="dropdown-item" href="#cycling">Cycling</a></li>
                             <li><a class="dropdown-item" href="#swimming">Swimming</a></li>
                             <li><a class="dropdown-item" href="#sports">Sports & Fitness</a></li>
+                            <li><a class="dropdown-item" href="#exercise">Group Exercise</a></li>
                             <li><a class="dropdown-item" href="#membership">Membership</a></li>
                             <li><a class="dropdown-item" href="#salon">Salon & Spa</a></li>
                             <li><a class="dropdown-item" href="#list">List of Equipment with its discription</a></li>
                         </ul>
                     </li>
                     <!-- dropdown links end here -->
-                    <li><a href="#enquiryform">Enquir<span class="color">y Form</span></a></li>
+                    <li><a href="#enquiryform">Enquiry Form</a></li>
                     <li><a href="#faqs">FAQ's</a></li>
                     <li><a href="#sitemap">Site Map</a></li>
                 </ul>
@@ -114,17 +115,12 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <!-- <div class="hero">
-            <h1 class="first-heading ">Welcome to Prime Fitness Club</h1>
-            <p class="first-para">Your journey to fitness starts here!</p>
-            <button type="submit" class="join-btn">Join Now</button>
-        </div> -->
-        <!-- hero section end here -->
     </div>
+
 
     <!-- this is group exercise section - Kashif -->
     <!-- this is header of group exercise section -->
-    <div class="container-fuild text-center my-5 py-4" id="exercise">
+    <div class="container-fluid text-center my-5 py-4 " id="exercise">
         <div class="exercise-header border border-danger">
                 <H1>Group Exercise</H1>
                 <p>Join our dynamic group exercise classes and experience the energy of working out with others!</p>
@@ -133,7 +129,7 @@
 
     <!-- group exercise classes -->
 
-    <div class="container-fuild text-center" id="exercise">
+    <div class="container-xl text-center" id="exercise">
         <div class="row px-4 p-2">
 
             <!-- Yoga Classes -->
@@ -171,17 +167,16 @@
         </div>
     </div>
 
+    <!-- this is Membership section - Kashif -->
 
-     <!-- this is Membership section - Kashif -->
-
-    <div class="container-fuild text-center my-5 py-4" id="membership">
+    <div class="container-fluid text-center my-5 py-4" id="membership">
         <div class="membership-header border border-danger">
             <H1>Membership Plans</H1>
             <p>Choose the membership plan that suits you best and start your fitness journey with us!</p>
         </div>
     </div>
 
-    <div class="container-fuild  my-5">
+    <div class="container-xl  my-5">
         <div class="row px-4">
 
             <!-- Basic Access -->
@@ -239,10 +234,11 @@
         </div>
     </div>
 
+
     <!-- Gallery - Kashif -->
     <!-- this is header of gallery -->
     <div>
-        <div class="container-fuild text-center border-dark" id="gallery">
+        <div class="container-fluid text-center border-dark" id="gallery">
             <div class="gallery-header border border-danger">
                 <h1 class="gallery-heading">Our Gallery</h1>
                 <p class="gallery-para">Explore our state-of-the-art facilities and vibrant community through our
@@ -356,6 +352,9 @@
 
     </div>
 
+    
+
+
     <!-- this is Faqs section -->
     <div id="faqs">
         <div class="main-faqs">
@@ -406,7 +405,7 @@
 
     <!-- Site map and footer  -->
 
-    <div class="container-fuild sitemap-1" id="sitemap">
+    <div class="container-xl sitemap-1" id="sitemap">
         <div class="main-sitemap">
             <h2 class="site-heading">Site Map</h2>
             <p class="site-para">A comprehensive overview of all pages on our website for easy navigation.</p>
@@ -459,9 +458,8 @@
         </footer>
     </div>
 
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="javascript/script.js"></script>
+    <script src="script.js"></script>
+    
 </body>
-
 </html>
