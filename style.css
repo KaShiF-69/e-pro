@@ -378,6 +378,12 @@ body {
     color: white;
 }
 
+.membership-heading{
+    text-shadow:  0px 0px 5px red,
+                    0px 0px 10px red,
+                    0px 0px 15px red;
+}
+
 .membership-card {
     border: 1px solid blue;
     border-radius: 8px;
@@ -465,8 +471,11 @@ body {
     padding-top: 80px;
     font-size: 25px;
     color: white;
-
-
+}
+.group-heading{
+    text-shadow:  0px 0px 5px red,
+                    0px 0px 10px red,
+                    0px 0px 15px red;
 }
 
 .exercise-card {
@@ -512,7 +521,17 @@ body {
 
 /* cycling page - kashif */
 
+.cycling-heading{
+    text-shadow:  0px 0px 5px red,
+                    0px 0px 10px red,
+                    0px 0px 15px red;
+}
 
+.cycling-text{
+    text-shadow:  0px 0px 10px black,
+                    0px 0px 15px black,
+                    0px 0px 20px black;
+}
 
 .cycling-header {
     background-image: url("/assest/image/Cycling-img-3.jpg");
@@ -542,6 +561,11 @@ body {
     background-repeat: no-repeat;
 }
 
+.perks-heading{
+    text-shadow:  0px 0px 5px red,
+                    0px 0px 10px red,
+                    0px 0px 15px red;
+}
 .perk-item {
      margin-top: 15px;
       margin-bottom: 0.75rem;
@@ -549,6 +573,11 @@ body {
       font-size: 18px;
       margin-left: 350px;
       text-decoration: underline;
+      font-size: 20px;
+      color: black;
+      text-shadow:  0px 0px 10px black,
+                    0px 0px 15px white,
+                    0px 0px 20px white;
     }
 
     /* key farem for btn  */
