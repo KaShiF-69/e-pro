@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Fitness Club</title>
+    <!-- this meta tage is used for seo -->
+    <meta name="description"
+        content="Welcome to Prime Fitness Club, your ultimate destination for fitness and wellness. Join us to achieve your health goals with state-of-the-art facilities and expert guidance.">
+    <!-- these two link is used to link the bootstrap css and js file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <!-- this link is used to link the css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- this link is used to link the font awesome icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- JQuery link -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- font awesome cdn  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- link for light box -->
+    <link rel="stylesheet" href="/css-lightbox/lightbox.css">
+    <script src="/js-lightbox/lightbox.js"></script>
+</head>
+
+<body>
+    <!-- first i create navbar -->
+    <!-- this is home page of prime fitness club -->
+    <div class=" home-1" id="home">
+
+        <!-- nav bar is starting from here -->
+        <div class="nav">
+            <div class="logo-menu">
+                <img src="assest/image/1.png" alt="Prime Fitness Club Logo" class="logo">
+            </div>
+            <div class="navbar" id="navbarLinks">
+                <ul class="nav-links">
+                    <!-- these are nav links  -->
+                    <li><a class="hav" href="#home">Home</a></li>
+                    <li><a class="hav" href="#aboutus">About Us</a></li>
+                    <li><a class="hav" href="#gallery">Gallery</a></li>
+                    <!-- these are dropdown links -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            More Facilities
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#cycling">Cycling</a></li>
+                            <li><a class="dropdown-item" href="#swimming">Swimming</a></li>
+                            <li><a class="dropdown-item" href="#sports">Sports & Fitness</a></li>
+                            <li><a class="dropdown-item" href="#membership">Membership</a></li>
+                            <li><a class="dropdown-item" href="#salon">Salon & Spa</a></li>
+                            <li><a class="dropdown-item" href="#list">List of Equipment with its discription</a></li>
+                        </ul>
+                    </li>
+                    <!-- dropdown links end here -->
+                    <li><a href="#enquiryform">Enquir<span class="color">y Form</span></a></li>
+                    <li><a href="#faqs">FAQ's</a></li>
+                    <li><a href="#sitemap">Site Map</a></li>
+                </ul>
+                <!-- nav links end here -->
+            </div>
+            <!-- and the navbar end here -->
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <!-- this is the slider of the page -->
+        <!-- in this hero section page the website first heading and first paragraph is written and a button is also given -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h1 class="first-heading ">Welcome to Prime Fitness Club</h1>
+                    <p class="first-para">Your journey to fitness starts here!. At Prime Fitness, we believe that true
+                        wellness is more than just a workout – it's a complete lifestyle transformation. Located in
+                        [Your Location, e.g., the heart of the city / a convenient neighborhood], we are dedicated to .
+                    </p>
+                    <button type="submit" class="join-btn">Join Now</button>
+                </div>
+                <div class="carousel-item">
+                    <h1 class="first-heading ">Expert Certified Trainers</h1>
+                    <p class="first-para">Our team of highly qualified and passionate personal trainers are here to
+                        guide you every step of the way. Whether you're looking for personalized workout plans,
+                        nutritional advice, or motivational support, our trainers are dedicated to helping you set
+                        realistic goals and achieve extraordinary results.</p>
+                    <button type="submit" class="join-btn">Join Now</button>
+                </div>
+                <div class="carousel-item">
+                    <h1 class="first-heading ">Diverse Group Fitness Classes</h1>
+                    <p class="first-para">Find your rhythm and motivation in our diverse range of group fitness classes.
+                        From high-energy HIIT and invigorating spin classes to calming yoga and dynamic Zumba, there's a
+                        class for every interest and fitness level. Our experienced instructors ensure each session is
+                        engaging, effective, and fun.</p>
+                    <button type="submit" class="join-btn">Join Now</button>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- <div class="hero">
+            <h1 class="first-heading ">Welcome to Prime Fitness Club</h1>
+            <p class="first-para">Your journey to fitness starts here!</p>
+            <button type="submit" class="join-btn">Join Now</button>
+        </div> -->
+        <!-- hero section end here -->
+    </div>
+
+    <!-- this is group exercise section - Kashif -->
+    <!-- this is header of group exercise section -->
+    <div class="container-fuild text-center my-5 py-4" id="exercise">
+        <div class="exercise-header border border-danger">
+                <H1>Group Exercise</H1>
+                <p>Join our dynamic group exercise classes and experience the energy of working out with others!</p>
+        </div>
+    </div>
+
+    <!-- group exercise classes -->
+
+    <div class="container-fuild text-center" id="exercise">
+        <div class="row px-4 p-2">
+
+            <!-- Yoga Classes -->
+
+            <div class="exercise-card col-12 col-sm-12 col-md-4 p-3">  
+                <img class="exercise-img img-fluid rounded-3 border" src="/assest/image/yoga.jpg" alt="Yoga Classes">
+                <div class="exercise-text">
+                    <h2>Yoga Classes</h2>
+                    <p>Join our calming yoga sessions designed to improve flexibility, enhance balance, and reduce stress. Perfect for all levels, from beginners to advanced practitioners.</p>
+                </div>
+                <!-- <button type="submit" class="join-btn">Join Now</button> -->
+            </div>
+
+            <!-- HIIT Workouts -->
+
+            <div class="exercise-card col-12 col-sm-12 col-md-4 p-3">
+                <img class="exercise-img img-fluid rounded-3 border" src="/assest/image/hiit.jpg" alt="HIIT Workouts">
+                <div class="exercise-text">
+                    <h2>HIIT Workouts</h2>
+                    <p>High-Intensity Interval Training (HIIT) sessions designed to torch calories, build strength, and boost endurance. Fast, fun, and effective in just 30 minutes.</p>
+                </div>
+                <!-- <button type="submit" class="join-btn">Join Now</button> -->
+            </div>
+
+            <!-- Spin Classes -->
+
+            <div class="exercise-card col-12 col-sm-12 col-md-4 p-3">
+                <img class="exercise-img img-fluid rounded-3 border" src="/assest/image/spin.jpg" alt="Spin Classes">
+                <div class="exercise-text">
+                    <h2>Spin Classes</h2>
+                    <p>Ride to the rhythm in our indoor spin classes. Great for cardio, leg strength, and endurance with motivating music and group energy to keep you going.</p>
+                </div>
+                <!-- <button type="submit" class="join-btn">Join Now</button> -->
+            </div>
+        </div>
+    </div>
+
+
+     <!-- this is Membership section - Kashif -->
+
+    <div class="container-fuild text-center my-5 py-4" id="membership">
+        <div class="membership-header border border-danger">
+            <H1>Membership Plans</H1>
+            <p>Choose the membership plan that suits you best and start your fitness journey with us!</p>
+        </div>
+    </div>
+
+    <div class="container-fuild  my-5">
+        <div class="row px-4">
+
+            <!-- Basic Access -->
+
+            <div class="col-12 col-sm-12 col-md-4 p-2">
+                <div class="membership-card membership-card-bg-1 text-center text-light">
+                    <h2 class="membership-name text-primary text-center">Basic Access</h2>
+                    <h3 class="perks text-center ">$30<span class="fs-6">/month</span></h3>
+                        <ul class="list-unstyled mt-3 mb-4 h5">
+                            <li class="perks fw-bold">✓ Gym Floor Access</li>
+                            <li class="perks fw-bold">✓ Cardio Equipment</li>
+                            <li class="perks fw-bold">✓ Weight Training Area</li>
+                            <li class="perks text-decoration-line-through">✗ Group Classes</li>
+                            <li class="perks text-decoration-line-through">✗ Pool Access</li>
+                            <li class="perks text-decoration-line-through">✗ Salon & Spa Discounts</li>
+                        </ul>
+                    <button class="join-btn membership-btn"><a href="#" class="text-light ">Select Basic</a></button>
+                </div>
+            </div>
+
+            <!-- Premium Access -->
+
+            <div class="col-12 col-sm-12 col-md-4 p-2">
+                <div class="membership-card membership-card-bg-2 text-center text-light">
+                    <h2 class="membership-name text-primary text-center">Premium Access
+                        <span class="popular-badge text-decoration-underline">POPULAR</span>
+                    </h2>
+                    <h3 class="perks text-center">$50<span class="fs-6 ">/month</span></h3>
+                    <ul class="list-unstyled mt-3 mb-4 h5">
+                        <li class="perks fw-bold">✓ All Basic Access Benefits</li>
+                        <li class="perks fw-bold">✓ Unlimited Group Classes</li>
+                        <li class="perks fw-bold">✓ Full Pool Access</li>
+                        <li class="perks fw-bold">✓ Discounted Personal Training</li>
+                        <li class="perks text-decoration-line-through">✗ Salon & Spa Discounts</li>
+                    </ul>
+                    <button class="join-btn membership-btn"><a href="#" class="text-light">Select Premium</a></button>
+                </div>
+            </div>
+
+            <!-- Elite All-Access -->
+
+            <div class="col-12 col-sm-12 col-md-4 p-2">
+                <div class="membership-card membership-card-bg-3 text-center text-light">
+                    <h2 class="membership-name text-primary text-center">Elite All-Access</h2>
+                    <h3 class="perks text-center">$75<span class="fs-6">/month</span></h3>
+                    <ul class="list-unstyled mt-3 mb-4 h5">
+                        <li class="perks fw-bold">✓ All Premium Pass Benefits</li>
+                        <li class="perks fw-bold">✓ 1 Free Personal Training &nbsp;&nbsp;&nbsp;&nbsp;Session/month</li>
+                        <li class="perks fw-bold">✓ 15% Salon & Spa Discount</li>
+                        <li class="perks fw-bold">✓ Guest Passes (2/month)</li>
+                    </ul>
+                    <button class="join-btn membership-btn"><a href="#" class="text-light">Select Elite</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery - Kashif -->
+    <!-- this is header of gallery -->
+    <div>
+        <div class="container-fuild text-center border-dark" id="gallery">
+            <div class="gallery-header border border-danger">
+                <h1 class="gallery-heading">Our Gallery</h1>
+                <p class="gallery-para">Explore our state-of-the-art facilities and vibrant community through our
+                    gallery.
+                </p>
+            </div>
+        </div>
+
+    <!-- Gallery images container-->
+
+        <div class="gallery-container container p-3 rounded-4">
+            <!-- images row 1 -->
+            <div class="row d-flex">
+                <div class="col-12 col-sm-12 col-md-4">
+                    <a class="gallery-img" href="/assest/image/Cycling-img-1.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg img-fluid" src="/assest/image/Cycling-img-1.avif" alt="Cycling Image 1">
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-4">
+                    <a class="gallery-img" href="/assest/image/Cycling-img-2.jpg" data-lightbox="roadtrip">
+                        <img class="galleryimg img-fluid" src="/assest/image/Cycling-img-2.jpg" alt="Cycling Image 2">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                    <a class="gallery-img" href="/assest/image/Cycling-img-3.jpg" data-lightbox="roadtrip">
+                        <img class="galleryimg img-fluid" src="/assest/image/Cycling-img-3.jpg" alt="Cycling Image 3">
+                    </a>
+                </div>
+            </div>
+
+            <!-- images row 2 -->
+            <div class="row d-flex py-3">
+                <div class="col-12 col-sm-12 col-md-4">
+                    <a class="gallery-img" href="/assest/image/Swimming-Img-1.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg img-fluid" src="/assest/image/Swimming-Img-1.avif" alt="Swimming Image 1">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                    <a class="gallery-img" href="/assest/image/Swimming-Img-2.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg img-fluid" src="/assest/image/Swimming-Img-2.avif" alt="Swimming Image 2">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                    <a class="gallery-img" href="/assest/image/Swimming-Img-3.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg img-fluid" src="/assest/image/Swimming-Img-3.avif" alt="Swimming Image 3">
+                    </a>
+                </div>
+            </div>
+
+            <!-- images row 3 -->
+            <div class="row d-flex py-3">
+                <div class="col-12 col-sm-12 col-md-4">
+                    <a class="gallery-img" href="/assest/image/Sports-Img-1.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg img-fluid" src="/assest/image/Sports-Img-1.avif" alt="Sports Image 1">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                    <a class="gallery-img" href="/assest/image/Sports-Img-2.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg img-fluid" src="/assest/image/Sports-Img-2.avif" alt="Sports Image 2">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                    <a class="gallery-img" href="/assest/image/Sports-Img-3.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg img-fluid" src="/assest/image/Sports-Img-3.avif" alt="Sports Image 3">
+                    </a>
+                </div>
+            </div>
+
+            <!-- images row 4 -->
+            <div class="row d-flex py-3">
+                <div class="col-12 col-sm-12 col-md-4">
+                    <a class="gallery-img" href="/assest/image/GroupExercise-Img-1.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg img-fluid" src="/assest/image/GroupExercise-Img-1.avif"
+                            alt="Group Exercise Image 1">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                    <a class="gallery-img" href="/assest/image/GroupExercise-Img-2.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg img-fluid" src="/assest/image/GroupExercise-Img-2.avif"
+                            alt="Group Exercise Image 2">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                    <a class="gallery-img" href="/assest/image/GroupExercise-Img-3.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg img-fluid" src="/assest/image/GroupExercise-Img-3.avif"
+                            alt="Group Exercise Image 3">
+                    </a>
+                </div>
+            </div>
+            <!-- images row 5 -->
+            <div class="row d-flex py-3">
+                <div class="col-12 col-sm-12 col-md-4">
+                    <a class="gallery-img" href="/assest/image/Salon-Img-1.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg img-fluid" src="/assest/image/Salon-Img-1.avif" alt="Salon Image 1">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                    <a class="gallery-img" href="/assest/image/Salon-Img-2.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg img-fluid" src="/assest/image/Salon-Img-2.avif" alt="Salon Image 2">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                    <a class="gallery-img" href="/assest/image/Salon-Img-3.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg img-fluid" src="/assest/image/Salon-Img-3.avif" alt="Salon Image 3">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- this is Faqs section -->
+    <div id="faqs">
+        <div class="main-faqs">
+            <!-- faqs main heading and paragraph -->
+            <h2 class="faqs-heading">Frequently Asked Questions</h2>
+            <!-- faqs question and answer  -->
+            <p class="faq-para">Find answers to common questions about our facilities, memberships, and services.</p>
+            <div class="bar">
+                <p class="question"><i class="fa fa-plus"></i>What is your Operating hours?</p>
+                <div class="answer">
+                    Our facility is open Monday to Friday from 6:00 AM to 10:00 PM, and Saturday to Sunday from 8:00 AM
+                    to 8:00 PM.
+                </div>
+                <!-- faqs question and answer end here and following are same code -->
+            </div>
+            <div class="bar">
+                <p class="question"><i class="fa fa-plus"></i>Do you offer Personal traning?</p>
+                <div class="answer">
+                    Yes, we have a team of certified personal trainers available for one-on-one sessions. You can book a
+                    consultation at the front desk or through our website.
+                </div>
+            </div>
+            <div class="bar">
+                <p class="question"><i class="fa fa-plus"></i>Can i try class before joining?</p>
+                <div class="answer">
+                    Absolutely! We offer a complimentary trial class for new visitors. Please check our group exercise
+                    schedule and sign up at the front desk.
+                </div>
+            </div>
+            <div class="bar">
+                <p class="question"><i class="fa fa-plus"></i>What is included in the Premium Pass membership?</p>
+                <div class="answer">
+                    The Premium Pass includes full access to the gym floor, unlimited group exercise classes, and full
+                    access to our swimming pool facilities.
+                </div>
+            </div>
+            <div class="bar">
+                <p class="question"><i class="fa fa-plus"></i>Do you have changing rooms and lockers? </p>
+                <div class="answer">
+                    Yes, we provide clean and spacious changing rooms with secure lockers for your belongings. Please
+                    bring your own lock or purchase one at the front desk.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- faqs end here -->
+
+
+    <!-- Site map and footer  -->
+
+    <div class="container-fuild sitemap-1" id="sitemap">
+        <div class="main-sitemap">
+            <h2 class="site-heading">Site Map</h2>
+            <p class="site-para">A comprehensive overview of all pages on our website for easy navigation.</p>
+        </div>
+        <div class="site-map">
+            <div class="main-section">
+                <ul class="main-sectionlink">
+                    <h3 class="section-heading">Main Section </h3>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutus">About US</a></li>
+                    <li><a href="#faqs">FAQ's</a></li>
+                    <li><a href="#enquiryform">Enquiry Form</a></li>
+                    <li><a href="#sitemap">Site Map</a></li>
+                </ul>
+                <ul class="activities">
+                    <h3 class="section-heading">Activities & Services </h3>
+                    <li><a href="#cycling">Cycling</a></li>
+                    <li><a href="#swimming">Swimming</a></li>
+                    <li><a href="#sports&fitness">Sports & Fitness</a></li>
+                    <li><a href="#exercise">Group Exercise</a></li>
+                    <li><a href="#salon&spa">Salon & Spa</a></li>
+                </ul>
+                <ul class="information">
+                    <h3 class="section-heading">Information & Resources</h3>
+                    <li><a href="#membership">Membership Option </a></li>
+                    <li><a href="#list">Equipment List</a></li>
+                    <li><a href="#gallery">Gellery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="details">
+            <div class="personal-details">
+                <img class="icons" src="assest/image/location_on_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
+                    alt="location_on_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24">
+                <p>Landhi No 2, Karachi, Pakistan</p>
+            </div>
+            <div class="personal-details">
+                <img class="icons" src="assest/image/call_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
+                    alt="call_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24">
+                <p>+92-312-123455</p>
+            </div>
+            <div class="personal-details">
+                <img class="icons" src="assest/image/mail_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
+                    alt="mail_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24">
+                <p>Info@primefitnessclub.com</p>
+            </div>
+        </div>
+        <footer>
+            <p class="footer-para">&copy; Copyright 2025 primefitnessclub.com All Rights Reserved.</p>
+        </footer>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,833 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+/* @media (max-width: 1000px) {
+    .nav {
+        display: none;
+    }
+    .home-1, .home-icon{
+        display: block;
+    }
+} */
+
+
+
+
+/* this is a universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* this is a body selector */
+body {
+    background-color: #f0f0f0;
+    
+}
+
+/* this is a header selector and navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* Hamburger Menu (Hidden by default on large screens) */
+.hamburger-menu {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: red;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+/* navlinks  */
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    list-style: none;
+    font-family: "Playfair Display", serif;
+}
+
+.nav-links li:hover {
+    text-decoration: underline;
+}
+
+.color:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.nav-links li a:hover {
+    color: red;
+}
+
+/* in navlinks anchor tag */
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* dropdown selector */
+.dropdown-menu {
+    height: 400px;  
+}
+
+/* Fix for the dropdown class */
+/* .dropdown {
+    overflow-y: hidden;
+    position: relative;
+    display: inline-block;
+} */
+
+/* doropdown item  */
+.dropdown-item {
+    margin-top: 20px;
+    color: black;
+    
+}
+
+.dropdown-menu li a {
+    color: black;
+}
+
+.color {
+    color: white;
+}
+
+/* this is a home page selector */
+.home-1 {
+    max-width: 100%;
+    height: auto;
+    background-image: url("/assest/image/Red\ White\ Modern\ Get\ Fit\ Stay\ Strong\ Youtube\ Banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+
+/* this is the main logo  */
+.logo {
+    width: 100px;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+/* first heading  */
+.first-heading {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5vw;
+    padding-left: 20px;
+    color: white;
+    overflow: hidden;
+}
+
+.carousel-inner{
+    width: 600px;
+    /* margin-left: 120px; */
+    position: relative;
+    left: 120px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* first paragraph selector */
+.first-para {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5vw;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    color: white;
+}
+
+/* hero class selector */
+
+/* join us button selector */
+.join-btn {
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 30px;
+    font-weight: 400;
+    margin: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    animation: shake 1.5s infinite;
+}
+
+/* join us btn hover effect */
+.join-btn:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    animation: change 1.5s infinite;
+}
+
+/* key farem for btn  */
+@keyframes shake {
+    0% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-8px);
+    }
+
+    80% {
+        transform: translateY(8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes change {
+    0% {
+        background-color: black;
+        color: red;
+    }
+
+    100% {
+        background-color: red;
+        color: black;
+    }
+}
+
+
+/* join us btn hover effect */
+.join-btn:hover {
+    background-color: red;
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* faq accordion is start from here */
+
+
+#faqs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 20px;
+
+}
+
+.main-faqs {
+    width: 100%;
+    padding: 10px;
+}
+
+.faqs-heading {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 42px;
+    overflow: hidden;
+}
+
+.faq-para {
+    font-family: "Playfair Display", serif;
+}
+
+.bar {
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px rgb(219, 218, 218), -2px -2px rgb(223, 220, 220);
+    padding: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    background: whitesmoke;
+
+}
+
+.question i{
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.question {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+}
+
+.answer {
+    display: none;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: inset 2px 2px 5px rgb(223, 220, 220), -2px -2px rgb(219, 218, 218);
+    font-family: "Playfair Display", serif;
+}
+
+/* site map started from here  */
+
+.sitemap-1 {
+    max-width: 100%;
+    /* height: 100dvh; */
+    background-image: url("/assest/image/Purple\ Abstract\ Graphic\ Design\ LinkedIn\ Article\ Cover\ Image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.site-heading {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4vw;
+    color: white;
+    position: relative;
+    left: 150px;
+    top: 13px;
+    overflow: hidden;
+}
+
+.site-para {
+    font-family: "Playfair Display", serif;
+    position: relative;
+    left: 150px;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: white;
+}
+
+.main-sectionlink {
+    list-style: none;
+}
+
+.section-heading {
+    font-family: "Bebas Neue", sans-serif;
+    overflow: hidden;
+}
+
+.main-sectionlink li {
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.main-sectionlink li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+    padding: 10px;
+}
+
+.main-sectionlink li a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.activities {
+    list-style: none;
+    
+}
+
+.activities li {
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.activities li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+    padding: 10px;
+}
+
+.activities li a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.information {
+    list-style: none;
+    position: relative;
+    bottom: 32px;
+}
+
+.information li {
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.information li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+    padding: 10px;
+}
+
+.information li a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.details {
+    width: 700px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    color: white;
+}
+
+.personal-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.icons {
+    position: relative;
+    bottom: 10px;
+}
+
+.footer-para {
+    width: 100%;
+    height: 40px;
+    background-color: #26053c;
+    text-align: center;
+    color: white;
+}
+
+
+/* Kashif gallery  */
+
+.gallery-header {
+    background-image: url("/assest/image/gallery-bg-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    margin-top: 50px;
+    padding-top: 80px;
+    font-size: 25px;
+    color: white;
+}
+
+.gallery-container {
+    margin-top: 50px;
+    background-image: url("/assest/image/gallery-bg-img.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.galleryimg {
+    width: 350px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.galleryimg:hover {
+    border: 1px solid #ff0000;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.membership-header {
+    background-image: url("/assest/image/Membership-head-bg-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    padding-top: 80px;
+    font-size: 25px;
+    color: white;
+}
+
+.membership-card {
+    border: 1px solid blue;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px black;
+    transition: transform 0.3s ease;
+    height: 380px;
+}
+
+.membership-name:hover {
+    transition: transform 0.3s ease;
+    /* transform: translateX(5px); */
+    transform: scale(1.05);
+}
+
+.membership-card-bg-1 {
+    background-image: url("/assest/image/membership-card-bg-img1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.membership-card-bg-2 {
+    background-image: url("/assest/image/membership-card-bg-img2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.membership-card-bg-3 {
+    background-image: url("/assest/image/membership-card-bg-img3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.membership-card:hover {
+    /* transform: scale(1.05); */
+    transform: translateY(-5px);
+}
+
+.perks:hover {
+    transform: translateY(-5px);
+    transition: 0.5s;
+    color: red;
+    text-shadow: 2px 2px black;
+}
+
+.popular-badge {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 5px;
+    /* position: relative;
+    bottom: 14px;
+    left: 60px; */
+}
+
+.popular-badge:hover {
+    background-color: darkorange;
+    color: white;
+    transition: 0.50s;
+
+}
+
+.membership-btn {
+    /* margin-left: 100px; */
+    text-align: center;
+}
+
+/* group exercise - kashif */
+
+.exercise-header {
+    background-image: url("/assest/image/group-exerise-bg-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    padding-top: 80px;
+    font-size: 25px;
+    color: white;
+}
+
+.exercise-card {
+    background-image: url("/assest/image/exercise-bg-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 20px;
+    color: white;
+    border-radius: 10px;
+    padding-left: 20px;
+    
+}
+
+.exercise-card:hover{
+    transform: translateY(-5px);
+    transition: 0.5s;
+    border: 3px solid red;
+    /* background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s; */
+    /* border: 10px solid cyan; */
+}
+
+/* .exercise-img:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+} */
+
+/* .exercise-text:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    text-shadow: 2px 2px black;
+} */
+
+.exercise-text{
+    margin-top: 20px;
+    height: auto;
+    border: 2px solid cyan;
+    /* border-radius: 15px; */
+    padding: 20px;
+}
+
+@media (max-width: 860px) {
+    .logo-menu {
+        flex-grow: 1;
+        text-align: left;
+    }
+
+    .hamburger-menu {
+        display: block; 
+        position: absolute; 
+        right: 1.5rem; 
+        top: 0.8rem;
+    }
+
+    .navbar {
+        width: 40%;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: black; 
+        padding: 20px 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+
+    .navbar.active { /* Class added by JavaScript when hamburger is clicked */
+        display: flex; /* Show navigation links when active */
+    }
+
+    .navbar ul {
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+        padding: 5px 0;
+        width: 100%; /* Ensure full width for clickable area */
+    }
+
+    .navbar-links ul li a {
+        font-size: 1.1rem;
+        display: block; /* Make the whole area clickable */
+    }
+
+    .carousel-inner{
+        /* width: 400px; */
+        left: 60px;
+        flex-wrap: wrap;
+    }
+
+    .first-heading{
+        font-size: 6vw;
+    }
+
+    .first-para{
+        font-size: 1.5vw;
+    }
+
+    .join-btn {
+        padding: 15px 30px;
+        font-size: 14px;
+    }
+
+    /* Faq responsivness started  */
+    .faqs-heading {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 35px;
+    }
+
+    /* Site map is started  */
+    .site-heading{
+        font-size: 6vw;
+    }
+
+    .site-para{
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 670px){
+    .carousel-inner{
+        width: 400px;
+        left: 40px;
+        flex-wrap: wrap;
+    }
+
+    .first-heading{
+        font-size: 8vw;
+    }
+
+    .first-para{
+        font-size: 2vw;
+    }
+
+    /* site map  */
+    .site-heading{
+        font-size: 6vw;
+        left: 50px;
+    }
+
+    .site-para{
+        font-size: 2vw;
+        left: 50px;
+    }
+
+    .section-heading{
+        font-size: 4vw;
+    }
+
+    .main-sectionlink li{
+        font-size: 2vw;
+    }
+
+    .activities li{
+        font-size: 2vw;
+    }
+
+    .information li{
+        font-size: 2vw;
+    }
+
+    .information{
+        top: -25px;
+    }
+
+    .details{
+        width: 500px;
+        font-size: 12px;
+        
+    }
+
+    .personal-details{
+        flex-wrap: wrap;
+    }
+
+    .details img{
+        width: 20px;
+    }
+
+    .footer-para{
+        font-size: 4vw;
+    }
+
+    /* site map  */
+
+    .details{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* faqs  */
+    .bar{
+        padding: 15px;
+    }
+
+}
+
+@media (max-width: 470px) {
+    .logo{
+        width: 50px;
+    }
+
+    .hamburger-menu {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .carousel-inner{
+        width: 300px;
+        left: 20px;
+        flex-wrap: wrap;
+    }
+
+    .first-heading{
+        font-size: 8vw;
+    }
+
+    .first-para{
+        font-size: 2vw;
+    }
+
+    .navbar {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: black; 
+        padding: 20px 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    /* site map  */
+
+    .details{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* faqs  */
+    .bar{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .join-btn {
+        padding: 5px 10px;
+        font-size: 8px;
+    }
+    .carousel-inner{
+        width: 200px;
+        left: 10px;
+        flex-wrap: wrap;
+    }
+
+
+    .first-heading{
+        font-size: 8vw;
+    }
+
+    .first-para{
+        font-size: 4vw;
+    }
+
+    .details{
+        position: relative;
+        right: 120px;
+    }
+
+    /* faqs  */
+    .bar{
+        padding: 5px;
+    }
+}
+
+/* Gallery Images */
+
+@media (max-width: 768px) {
+    .gallery-img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+}
