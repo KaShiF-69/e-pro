@@ -1020,8 +1020,477 @@ body {
   transform: scale(1.05);
 } */
 
+/* saim swiming */
+#swimming-swimming-pool-service {
+    text-align: center;
+    padding: 60px 20px 30px;
+    /* background-image: url(images/bg\ img\ of\ swnggg.avif); */
+    background-image: url("/assest/image/bg\ img\ of\ swnggg.avif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    width: 100%;
+    min-height: 100vh; /* ✅ This replaces fixed height */
+}
+
+.swimming-container {
+    display: grid;
+}
+
+.swimming-container h1 {
+    color: white;
+    font-size: 42px;
+    letter-spacing: 1.5px;
+    margin-top: 1%;
+    text-shadow: 0 0 5px red,
+        0 0 10px red,
+        0 0 20px red,
+        0 0 40px red;
+}
+
+.swimming-container p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 4%;
+}
+
+.swimming-services {
+    display: flex;
+}
+
+.swimming-card-group1 {
+    display: flex;
+}
+
+.swimming-card {
+    background-color: black;
+    border-radius: 15px;
+    border: 3px solid whitesmoke;
+    padding: 20px;
+    transition: transform 0.3s ease; 
+    box-shadow: 0.3s ease;
+    width: 25%;
+    min-width: 200px;
+    text-align: center;
+    padding: 15px;
+    margin-left: 3%;
+}
+
+.swimming-card:hover {
+    box-shadow:
+    0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 40px rgba(255, 255, 255, 0.4),
+    0 0 80px rgba(255, 255, 255, 0.3);
+}
+
+.swimming-card:hover {
+      box-shadow: 0 0 10px red,
+                0 0 20px red,
+                0 0 40px red;
+    transform: translateY(-8px);
+}
+
+.swimming-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.swimming-card h2 {
+    color: red;
+    margin-left: 4px;
+    margin-top: 3%;
+}
+
+.swimming-card p {
+    font-size: 15px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.swimming-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.swimming-card ul li {
+    padding: 5px;
+    font-size: 15px;
+    border-bottom: 1px solid #ffffff15;
+    color: white;
+}
+
+/* saim salon and spa page css */
+#SalonSpa-salon-spa{
+    /* background-image: url(images/massage\ bg\ pic.webp); */
+    background-image: url("/assest/image/massge-bg-img.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+.SalonSpa-container {
+    margin-left: 15%;
+    margin-top: 4%;
+}
+
+.SalonSpa-container h1 {
+    font-size: 40px;
+    margin-left: 17%;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 0 0 5px red,
+                 0 0 10px red,
+                 0 0 20px red,
+                 0 0 40px red;
+}
+
+.SalonSpa-container p {
+    font-size: 20px;
+    color: whitesmoke;
+    margin-left: 15%;
+}
+
+.SalonSpa-services-boxes {
+    gap: 40px;
+    justify-content: center;
+    margin-top: 20px;
+    display: inline-block;
+    margin-right: 4%;
+}
+
+/* --------css of service boxes--- */
+.SalonSpa-box {
+    background-color: black;
+    border-radius: 10px;
+    width: 350px;
+    padding: 15px;
+    transition: transform 0.3s;
+    border: 2px solid white;
+}
+
+.SalonSpa-box:hover {
+    box-shadow: 0 0 10px red,
+                0 0 20px red,
+                0 0 40px red;
+    transform: translateY(-8px);
+}
+
+/* -----------css for box images---- */
+.SalonSpa-box img {
+    width: 100%;
+    height: 25%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.SalonSpa-message {
+    font-size: 17px;
+    margin-top: 16px;
+}
+
+/* --------price and timing---- */
+.SalonSpa-price-timing {
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: left;
+    color: white;
+}
+
+.spa-heading{
+    color: red;
+}
+
+/* -------------media query for small screen--- */
+@media (max-width: 768px) {
+    .SalonSpa-container {
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .SalonSpa-container h1 {
+        font-size: 30px;
+    }
+
+    .SalonSpa-container p {
+        font-size: 15px;
+    }
+
+    .SalonSpa-services-boxes {
+        display: block;
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+
+    .SalonSpa-box {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .SalonSpa-box img {
+        height: auto;
+    }
+
+    .SalonSpa-message {
+        font-size: 15px;
+    }
+
+    .SalonSpa-price-timing {
+        font-size: 15px;
+    }
+}
+
+/* saim form */
+
+/* -----------contect part------ */
+#contact-us
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/contect-bg-picc.jpg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+}
+/* -----main container & all css---- */
+.contact-container
+{
+    margin-top: 10%;
+    margin-left:55%;
+}
+
+.contact-form-container h3
+{
+    color: white;
+    letter-spacing: 3px;
+    text-shadow: 0 0 5px red,
+    0 0 10px red,
+    0 0 20px red,
+    0 0 40px red;
+}
+
+.contact-form-container h1
+{
+    font-size: 30px;
+    margin-bottom: 2px;
+    color: white;
+    margin-top: 5px;
+}
+
+/* -----input groups--- */
+.contact-input-group
+{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+    margin-top: 8%;
+}
+
+.contact-input-group input
+{
+        flex: 1;
+    padding: 14px;
+    border-radius: 20px;
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    color: black;
+    column-rule: white;
+}
+/* ------message box---- */
+textarea
+{
+    width: 90%;
+    padding: 14px;
+    border-radius: 20px;
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    color: black;
+    resize:none;
+    margin-top: 6%;
+}
+
+input::placeholder,
+textarea::placeholder 
+{
+color: white;
+}
+
+.contact-btn
+{
+    margin-top: 5%;
+}
+/* -------css for bt---- */
+.contact-btn button
+{
+    padding: 14px 28px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(7, 10, 7, 0.3);
+    backdrop-filter: blur(6px);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+/* ---btn hover---- */
+.contact-btn button:hover
+{
+    background: rgb(177, 9, 9);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.submit-msg
+{
+    color: rgb(101, 255, 12);
+    margin-top: 10px;
+    display: none;
+    transition: all 0.3s ease;
+    font-size: small;
+}
+/* --------------media query for small screen-------- */
+@media (max-width: 768px) {
+    /* Corrected id selector name */
+    #contact-us {
+        position: static;      
+        height: auto;          
+        padding: 20px;
+        background-size: cover;
+        background-position: top;
+    }
+
+    /* Corrected container class */
+    .contact-container {
+        margin: 0 auto;         
+        width: 90%;             
+        padding: 20px 0;
+    }
+
+    /* Corrected heading containers */
+    .contact-form-container h1,
+    .contact-form-container h3 {
+        text-align: center;
+    }
+
+    /* Corrected input group class */
+    .contact-input-group {
+        gap: 10px;
+        flex-direction: column; 
+        margin-top: 20px;
+    }
+
+    /* Inputs full width */
+    .contact-input-group input {
+        width: 100%;
+        flex: unset; 
+    }
+
+    /* Textarea full width */
+    textarea {
+        width: 100%;
+        margin-top: 6%; 
+    }
+
+    /* Center button container */
+    .contact-btn {
+        text-align: center;
+        margin-top: 5%; 
+    }
+
+    /* Button full width */
+    .contact-btn button {
+        width: 100%;
+        max-width: none; 
+        padding: 14px 0;
+        font-size: 18px;
+    }
+}
+
+/* --smallest size- */
+@media (max-width: 480px) {
+    .SalonSpa-container h1 {
+        font-size: 25px;
+    }
+
+    .SalonSpa-container p {
+        font-size: 15px;
+    }
+
+    .SalonSpa-box {
+        padding: 9px;
+    }
+
+    .SalonSpa-message {
+        font-size: 15px;
+    }
+
+}
 
 
+/* -----responsive for small screens---- */
+@media (max-width: 768px) {
+    #swimming-swimming-pool-service {
+        background-attachment: scroll;
+        padding: 40px 10px;
+        height: auto;
+    }
+
+    .swimming-services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .swimming-card {
+        margin: 15px 0;
+        width: 90%;
+    }
+
+    .swimming-container h1 {
+        font-size: 30px;
+    }
+
+    .swimming-container p {
+        font-size: 15px;
+    }
+
+    .swimming-card h2 {
+        font-size: 20px;
+    }
+
+    .swimming-card p,
+    .swimming-card ul li {
+        font-size: 15px;
+    }
+}
+
+/* -------for smallest screen----- */
+@media (max-width: 480px) {
+    .swimming-container h1 {
+        font-size: 24px;
+    }
+
+    .swimming-container p {
+        font-size: 17px;
+    }
+
+    .swimming-card h2 {
+        font-size: 19px;
+    }
+
+    .swimming-card {
+        padding: 10px;
+    }
+
+    .swimming-card img {
+        height: 150px;
+    }
+}
 
 
 
