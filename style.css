@@ -653,6 +653,27 @@ body {
 
 
 /* Alyan Work  */
+.enquiry-header{
+    background-image: url("/assest/image/enquiry-bg.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    margin-top: 50px;
+    padding-top: 80px;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 50px;
+}
+.equiments-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.equiments-row{
+    gap: 50px;
+}
 .container1 {
     width: 100%;
     min-height: 100vh;
