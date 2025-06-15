@@ -653,7 +653,7 @@ body {
 
 
 /* Alyan Work  */
-.enquiry-header{
+.list-equipment-header{
     background-image: url("/assest/image/enquiry-bg.avif");
     background-size: cover;
     background-repeat: no-repeat;
@@ -665,7 +665,7 @@ body {
     color: white;
     margin-bottom: 50px;
 }
-.equiments-container{
+.equipments-container{
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -673,6 +673,12 @@ body {
 
 .equiments-row{
     gap: 50px;
+}
+
+.equipments-card:hover{
+    transform: translateY(-8px);
+    transition: 0.5s;
+    border: 1px solid red;
 }
 .container1 {
     width: 100%;
@@ -1022,6 +1028,8 @@ body {
 
 /* saim swiming */
 #swimming-swimming-pool-service {
+    /* display: flex;
+    justify-content: center; */
     text-align: center;
     padding: 60px 20px 30px;
     /* background-image: url(images/bg\ img\ of\ swnggg.avif); */
@@ -1057,6 +1065,7 @@ body {
 
 .swimming-services {
     display: flex;
+    justify-content: center;
 }
 
 .swimming-card-group1 {
@@ -1132,13 +1141,14 @@ body {
     background-repeat: no-repeat;
 }
 .SalonSpa-container {
-    margin-left: 15%;
+    text-align: center;
+    /* margin-left: 15%; */
     margin-top: 4%;
 }
 
 .SalonSpa-container h1 {
     font-size: 40px;
-    margin-left: 17%;
+    /* margin-left: 17%; */
     margin-bottom: 20px;
     color: white;
     text-shadow: 0 0 5px red,
@@ -1150,10 +1160,12 @@ body {
 .SalonSpa-container p {
     font-size: 20px;
     color: whitesmoke;
-    margin-left: 15%;
+    /* margin-left: 15%; */
 }
 
 .SalonSpa-services-boxes {
+    display: flex;
+    justify-content: center;
     gap: 40px;
     justify-content: center;
     margin-top: 20px;
